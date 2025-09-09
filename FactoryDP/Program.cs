@@ -1,5 +1,5 @@
 ﻿
-//utilze factory 
+//Step 4: Utilze factory 
 VechileFactory vechileFactory = new VechileFactory();
 IVechile bus = vechileFactory.CreateVechile("Bus");
 bus.Manufaturing();
@@ -11,14 +11,14 @@ IVechile truck = vechileFactory.CreateVechile("Truck");
 truck.Manufaturing();
 
 
-//Product interface
+//Step1 :Product interface
 public interface IVechile
 {
     void Manufaturing();
 }
 
 
-// product class
+//Step 2: Product class
 public class Bus : IVechile
 {
     public void Manufaturing()
@@ -38,7 +38,7 @@ public class Truck : IVechile
 }
 
 
-//factory class
+//Step 3:factory class
 public class VechileFactory
 {
     public IVechile CreateVechile(string type)
