@@ -1,4 +1,10 @@
 ﻿
+//The Factory Design Pattern is a creational design pattern that provides an interface
+//for creating objects in a superclass but allows subclasses(or a separate factory class) to decide which class to instantiate.
+
+
+
+
 //Step 4: Utilze factory 
 VechileFactory vechileFactory = new VechileFactory();
 IVechile bus = vechileFactory.CreateVechile("Bus");
