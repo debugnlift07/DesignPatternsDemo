@@ -1,4 +1,6 @@
-﻿using System;
+﻿//Builder Pattern is one of the creational patterns.It’s used when you want to construct complex objects step by step
+
+using System;
 
 // Product
 public class Car
